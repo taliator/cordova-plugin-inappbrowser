@@ -94,8 +94,6 @@
         <source-file src="src/ios/CDVInAppBrowserOptions.m" />
         <header-file src="src/ios/CDVInAppBrowserNavigationController.h" />
         <source-file src="src/ios/CDVInAppBrowserNavigationController.m" />
-	    <header-file src="src/ios/CDVUIInAppBrowser.h" />
-	    <source-file src="src/ios/CDVUIInAppBrowser.m" />
 	    <header-file src="src/ios/CDVWKInAppBrowser.h" />
 	    <source-file src="src/ios/CDVWKInAppBrowser.m" />
 	    <header-file src="src/ios/CDVWKInAppBrowserUIDelegate.h" />
