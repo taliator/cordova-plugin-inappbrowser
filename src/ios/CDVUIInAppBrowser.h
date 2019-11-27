@@ -22,12 +22,8 @@
 #import <Cordova/CDVScreenOrientationDelegate.h>
 #import "CDVInAppBrowserOptions.h"
 #import "CDVInAppBrowserNavigationController.h"
+#import <Cordova/CDVWebViewDelegate.h>
 
-#ifdef __CORDOVA_4_0_0
-    #import <Cordova/CDVUIWebViewDelegate.h>
-#else
-    #import <Cordova/CDVWebViewDelegate.h>
-#endif
 
 @class CDVUIInAppBrowserViewController;
 
@@ -59,13 +55,7 @@
     NSString* _prevUserAgent;
     NSInteger _userAgentLockToken;
     CDVInAppBrowserOptions *_browserOptions;
-
-#ifdef __CORDOVA_4_0_0
-    CDVUIWebViewDelegate* _webViewDelegate;
-#else
     CDVWebViewDelegate* _webViewDelegate;
-#endif
-
 }
 
 @property (nonatomic, strong) IBOutlet UIWebView* webView;
